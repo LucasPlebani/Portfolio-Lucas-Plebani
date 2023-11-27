@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
+
 import {
   selectData,
   selectError,
@@ -16,6 +17,7 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import Modal from "../components/modal";
 
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -24,6 +26,15 @@ export default function Projects() {
   const error = useSelector(selectError);
   const data = useSelector(selectData);
 
+  const [isModalOpen, setIsModalOpen] = useState(false); // 
+
+  const openModal = () => { //
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => { // 
+    setIsModalOpen(false);
+  };
   React.useEffect(
     function () {
       const tempData = [];
@@ -48,7 +59,7 @@ export default function Projects() {
         <Container>
           <Container className="d-flex">
             <Title>
-              <h2>Projects</h2>
+              <h2>Mes Projets</h2>
               <div className="underline"></div>
             </Title>
           </Container>
@@ -66,26 +77,27 @@ export default function Projects() {
           {mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
-                {mainProjects.map(function ({
-                  id,
-                  image,
-                  name,
-                  description,
-                  html_url,
-                  homepage,
-                }) {
-                  return (
-                    <Col key={id}>
-                      <StyledCard
-                        image={image}
-                        name={name}
-                        description={description}
-                        url={html_url}
-                        demo={homepage}
-                      />
-                    </Col>
-                  );
-                })}
+              {mainProjects.map(function ({
+  id,
+  image,
+  name,
+  description,
+  html_url,
+  homepage,
+}) {
+  return (
+    <Col key={id}>
+      <StyledCard
+        image={image}
+        name={name}
+        description={description}
+        url={html_url}
+        demo={homepage}
+        onCardClick={openModal} // Pass openModal function as a prop
+      />
+    </Col>
+  );
+})}
               </Row>
               {data.length > 3 && (
                 <Container className="text-center mt-5">
@@ -96,14 +108,20 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      All <Icon icon="icomoon-free:github" /> Projects
+                      <Icon icon="icomoon-free:github" />  Tous les projets
                     </Button>
                   </Link>
                 </Container>
-              )}
+              )} <Modal isOpen={isModalOpen} onClose={closeModal}>
+          {/* Content for your modal goes here */}
+          <h2>Modal Content</h2>
+          <p>This is a modal. Click outside to close.</p>
+          <button onClick={closeModal}>Close</button>
+        </Modal>
             </>
           )}
         </Container>
+       
       </section>
     </Element>
   );

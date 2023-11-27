@@ -129,7 +129,7 @@ export default function AllProjects() {
             <Container className="d-flex">
               <Title>
                 <h2>
-                  All <Icon icon="mdi:github" /> Projects
+                  Tous les Projets <Icon icon="mdi:github" />
                 </h2>
                 <div className="underline"></div>
               </Title>
@@ -148,7 +148,7 @@ export default function AllProjects() {
             <Container className="d-flex">
               <Title>
                 <h2>
-                  All <Icon icon="mdi:github" /> Projects
+                  Tous Les projets <Icon icon="mdi:github" />
                 </h2>
                 <div className="underline"></div>
               </Title>
@@ -167,7 +167,7 @@ export default function AllProjects() {
             <Container className="d-flex">
               <Title>
                 <h2>
-                  All <Icon icon="mdi:github" /> Projects
+                  Tous les <Icon icon="mdi:github" /> Projets
                 </h2>
                 <div className="underline"></div>
               </Title>

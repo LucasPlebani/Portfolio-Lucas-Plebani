@@ -103,7 +103,7 @@ export default function ContactForm() {
               disabled={isProcessing}
               className="my-4"
             >
-              Submit{" "}
+              Soumettre{" "}
               {isProcessing && (
                 <Spinner animation="border" variant="success" size="sm" />
               )}
@@ -116,7 +116,7 @@ export default function ContactForm() {
             onClose={() => setSuccess(false)}
             dismissible
           >
-            <Alert.Heading>Success! I will contact you soon.</Alert.Heading>
+            <Alert.Heading>Votre message est envoyé avec succès !</Alert.Heading>
           </Alert>
           <Alert
             show={danger}

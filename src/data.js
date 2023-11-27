@@ -5,8 +5,14 @@ import { Icon } from "@iconify/react";
 // import newLogo from "./images/yourFileName"
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
 
+import Logolp from "./images/Logo-LP.png"
+import pBooki from "./images/P_booki.png"
+import pKasa from "./images/P_kasa.png"
+import pMvg from "./images/P_mvg.png"
+import pSb from "./images/P_SB.png"
+import pCarducci from "./images/P5_image.png"
+import pPortfolio from "./images/P_portfolio.png"
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
@@ -18,10 +24,10 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "LucasPlebani";
 
 // Navbar Logo image
-export const navLogo = undefined;
+export const navLogo = Logolp;
 
 // Blog link icon - https://icon-sets.iconify.design/
 export const Blog = <Icon icon="ph:link-bold" />;
@@ -31,7 +37,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "Passionné par la création web, je marie l'esthétique au fonctionnel pour donner vie à des expériences uniques et intuitives. Mon objectif : transformer des idées en lignes de code pour construire un web innovant et engageant.";
 
 /* Skills
  ************************************************************** 
@@ -55,8 +61,8 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
+    skill: <Icon icon="teenyicons:mongodb-solid"  className="display-4" />,
+    name: "Mongo.DB",
   },
   {
     id: 5,
@@ -65,13 +71,13 @@ export const skillData = [
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    skill: <Icon icon="mdi:responsive"  className="display-4" />,
+    name: "Responsive",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
+    skill: <Icon icon="la:node" className="display-4" />,
+    name: "Node.js",
   },
   {
     id: 8,
@@ -92,13 +98,34 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["projet-Booki", "P5-nina-carducci.github.io", "projet-kasa-P6", "P7-Dev-Web-livres", "Portfolio-architecte-sophie-bluel",];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "P5-nina-carducci.github.io",
+    image: pCarducci,
+  },
+  {
+    name: "projet-kasa-P6",
+    image: pKasa,
+  },
+  {
+    name: "P7-Dev-Web-livres",
+    image: pMvg,
+  },
+  {
+    name: "Portfolio-architecte-sophie-bluel",
+    image: pSb,
+  },
+
+  {
+    name: "Portfolio-Lucas-Plebani",
+    image: pPortfolio,
+  },
+    {
+    name: "projet-Booki",
+    image:  pBooki,
   },
 ];
 
@@ -107,4 +134,4 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/xgejjyvq";

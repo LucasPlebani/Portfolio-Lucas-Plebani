@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
     color: #45413c;
 
     &:hover {
-      color: #fbfdff;
+      color: #F5F5F5;
     }
   }
 `;

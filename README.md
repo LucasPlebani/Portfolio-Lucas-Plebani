@@ -39,7 +39,7 @@ Add your GitHub username once and all of your info will automatically be updated
    ************************************************************** 
      Add your GitHub username (string - "YourUsername") below.
    */
-   export const githubUsername = "Your GitHub username here";
+   export const githubUsername = "LucasPlebani";
    ```
 
 7. Start the development server to view the results
