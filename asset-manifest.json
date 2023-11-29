@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Lucas-Plebani/static/css/main.fa2252e2.css",
-    "main.js": "/Portfolio-Lucas-Plebani/static/js/main.2ca236bb.js",
+    "main.js": "/Portfolio-Lucas-Plebani/static/js/main.a0580cf5.js",
     "static/media/P_portfolio.png": "/Portfolio-Lucas-Plebani/static/media/P_portfolio.b62f0cd6ea14ee368c05.png",
     "static/media/P5_image.png": "/Portfolio-Lucas-Plebani/static/media/P5_image.ff2610107dc98514a607.png",
     "static/media/P_SB.png": "/Portfolio-Lucas-Plebani/static/media/P_SB.58e1593a53f048ea6d2f.png",
@@ -18,10 +18,10 @@
     "static/media/logo.svg": "/Portfolio-Lucas-Plebani/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio-Lucas-Plebani/index.html",
     "main.fa2252e2.css.map": "/Portfolio-Lucas-Plebani/static/css/main.fa2252e2.css.map",
-    "main.2ca236bb.js.map": "/Portfolio-Lucas-Plebani/static/js/main.2ca236bb.js.map"
+    "main.a0580cf5.js.map": "/Portfolio-Lucas-Plebani/static/js/main.a0580cf5.js.map"
   },
   "entrypoints": [
     "static/css/main.fa2252e2.css",
-    "static/js/main.2ca236bb.js"
+    "static/js/main.a0580cf5.js"
   ]
 }
