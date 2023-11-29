@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 // Icons
 import { Icon } from "@iconify/react";
 // Media
@@ -33,25 +34,22 @@ const StyledCardComponent = styled.div`
   }
 `;
 
-export default function StyledCard({ image, name, description, url, demo }) {
+export default function StyledCard({ id, image, name, description, url }) {
   return (
     <StyledCardComponent>
       <Card>
-        <Card.Img
-          variant="top"
-          src={image ? image : GH}
-          alt={name}
-          className="mx-auto"
-        />
+      <Link to={`/projects/${name}/${id}`} >
+    <Card.Img style={{ width: '100%', height: '100%'}}
+      src={image ? image : GH}
+      alt={name}
+      className="mx-auto img-fluid rounded" 
+      
+    />
+  </Link>
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {demo !== "" ? (
-            <Card.Link href={demo}>
-              {"Live Demo "}
-              <Icon icon="icon-park-outline:code-computer" />
-            </Card.Link>
-          ) : null}
+         
         </Card.Body>
         <Card.Footer className="text-center">
           <Card.Link href={url}>

@@ -70,14 +70,14 @@ export default function ContactForm() {
     <>
       <Form noValidate validated={isValidated} onSubmit={handleSubmit}>
         <Form.Group className="mx-auto mb-3 form-group" controlId="name">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Nom et Prénom</Form.Label>
           <Form.Control required type="text" placeholder="Your name" />
           <Form.Control.Feedback type="invalid">
             <h5>Name must be at least one character.</h5>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mx-auto mb-3 form-group" controlId="email">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Adresse Mail</Form.Label>
           <Form.Control
             required
             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"

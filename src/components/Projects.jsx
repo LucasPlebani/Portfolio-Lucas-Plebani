@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
 
@@ -17,7 +17,7 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
-import Modal from "../components/modal";
+
 
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
@@ -26,15 +26,9 @@ export default function Projects() {
   const error = useSelector(selectError);
   const data = useSelector(selectData);
 
-  const [isModalOpen, setIsModalOpen] = useState(false); // 
 
-  const openModal = () => { //
-    setIsModalOpen(true);
-  };
 
-  const closeModal = () => { // 
-    setIsModalOpen(false);
-  };
+
   React.useEffect(
     function () {
       const tempData = [];
@@ -45,9 +39,9 @@ export default function Projects() {
         );
         tempArray.length !== 0
           ? setMainProjects([...tempArray])
-          : setMainProjects([...tempData.slice(0, 3)]);
+          : setMainProjects([...tempData.slice(0, 5)]);
       } else {
-        setMainProjects([...tempData.slice(0, 3)]);
+        setMainProjects([...tempData.slice(0, 5)]);
       }
     },
     [data]
@@ -87,17 +81,20 @@ export default function Projects() {
 }) {
   return (
     <Col key={id}>
-      <StyledCard
-        image={image}
-        name={name}
-        description={description}
-        url={html_url}
-        demo={homepage}
-        onCardClick={openModal} // Pass openModal function as a prop
-      />
-    </Col>
+    <StyledCard
+      image={image}
+      name={name}
+      description={description}
+      url={html_url}
+      demo={homepage}
+    />
+  </Col>
+  
+
+  
   );
 })}
+
               </Row>
               {data.length > 3 && (
                 <Container className="text-center mt-5">
@@ -112,12 +109,7 @@ export default function Projects() {
                     </Button>
                   </Link>
                 </Container>
-              )} <Modal isOpen={isModalOpen} onClose={closeModal}>
-          {/* Content for your modal goes here */}
-          <h2>Modal Content</h2>
-          <p>This is a modal. Click outside to close.</p>
-          <button onClick={closeModal}>Close</button>
-        </Modal>
+              )} 
             </>
           )}
         </Container>

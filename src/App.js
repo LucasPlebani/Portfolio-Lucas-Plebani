@@ -22,6 +22,12 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+import QwentaPage from "./pages/qwenta";
+import ArchitectePage from "./pages/architecte";
+import BookiPage from "./pages/booki"
+import KasaPage from "./pages/kasa";
+import MvgPage from "./pages/mvg";
+import NinaPage from "./pages/Nina";
 
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
@@ -88,6 +94,14 @@ export default function App() {
             <NavBar Logo={navLogo} />
           </Element>
           <Routes>
+            <Route path="/qwenta" element={<QwentaPage />} /> 
+            <Route path="/projects/architecte-Sophie-Bluel/:id" element={<ArchitectePage />} />
+            <Route path="projects/Booki/:id" element={<BookiPage />} />
+            <Route path="projects/Kasa/:id" element={<KasaPage />} />  
+            <Route path="projects/Mon-Vieux-Grimoire/:id" element={<MvgPage />} /> 
+            <Route path="projects/Photographe-Nina-Carducci/:id" element={<NinaPage />} /> 
+            
+
             <Route exact path="/" element={<Home />} />
             <Route path="/All-Projects" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />

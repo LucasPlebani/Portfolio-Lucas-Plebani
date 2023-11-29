@@ -103,20 +103,21 @@ export const filteredProjects = ["projet-Booki", "P5-nina-carducci.github.io", "
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "P5-nina-carducci.github.io",
+    name: "Photographe-Nina-Carducci",
     image: pCarducci,
   },
   {
-    name: "projet-kasa-P6",
+    name: "Kasa",
     image: pKasa,
   },
   {
-    name: "P7-Dev-Web-livres",
+    name: "Mon-Vieux-Grimoire",
     image: pMvg,
   },
   {
-    name: "Portfolio-architecte-sophie-bluel",
+    name: "Architecte-Sophie-Bluel",
     image: pSb,
+    
   },
 
   {
@@ -124,7 +125,7 @@ export const projectCardImages = [
     image: pPortfolio,
   },
     {
-    name: "projet-Booki",
+    name: "Booki",
     image:  pBooki,
   },
 ];

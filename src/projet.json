@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Booki",
+      "img": ["/assets/booki1.png",
+      "/assets/booki2.png",
+      "/assets/booki3.png"],
+      "altText": "Image du projet Booki",
+      "descriptionProjet": "Booki est un site de réservation de logement orienté sur la ville de Marseille. 1er projet de la formation sur les codes HTML / CSS, le tout en étant responsive. Ce projet, m'a donner la possibilité de mettre en place un environnement front-end, la possibilitée de versionner mon projet via Git et GitHub. J'ai pu intégrer le contenu conformément aux demandes de la maquette.",
+      "tags": ["HTML", "CSS", "Git", "Github", "Responsive"]
+    },
+    {
+      "id": 2,
+      "name": "Kasa",
+      "img": [ "/assets/kasa1.png","/assets/kasa2.png","/assets/kasa3.png","/assets/kasa4.png"],
+      "altText": "Image du projet Kasa",
+      "descriptionProjet": "Kasa est un site de réservation de logement (style Booking). Se projet ma permis de partir de zéro et de mettre en place mon environnement de développement avec React-create-app. J'ai pu apprendre le langage de React ainsi que ses Hooks. J'ai pu utilisé SASS ainsi que SCSS pour la mise en page du site. J'ai eu aussi la possibilitée de pouvoir creer mes routes grâce à React-Router.",
+      "tags": ["React", "Sass", "Scss", "React Router"]
+
+    },
+    {
+        "id": 3,
+        "name": "Menu-maker-by-qwenta",
+        "tags": ["Organisation",
+         "Kanban",
+         "Agiles",
+         "Veille Technologique"],
+        "img": [ "/assets/qwenta1.png","/assets/qwenta2.png",
+        "/assets/qwenta3.png",
+        "/assets/qwenta _slider.png"
+    ],
+        "descriptionProjet": "Le projet de menu Maker By qwenta, est un projet qui m'a permis de préparer et planifier le projet de développement d’un site. J'ai eu la possibilitée de mettre en place une veille technologique, un Kanban via Trello, Trois présentation PowerPoint ainsi que de remplir une feuille technique pour l'utilisation des technologies. ",
+        "altText": "Texte alternatif pour l'image de Menu-maker-by-qwenta"
+      },
+      
+      {
+        "id": 4,
+        "name": "Architecte-Sophie-Bluel",
+        "img": ["/assets/sb1.png", "/assets/sb2.png","/assets/sb3.png","/assets/sb4.png"],
+        "altText": "Image du projet Sophie Bluel Architect",
+        "descriptionProjet": "Le projet de l'architecte Sophie Bluel est l'un des plus long est des plus complexe de la formation, mais très enrichissant et très prenant. Ce projet m'a permis de découvrir de nombreuse fonctionnalité de javascript comme la création de Modal, les appels API avec Fetch() par exemple. J'ai pu apprendre à gérer les évènements utilisateur en créant une partie Admin pour l'ajout de nouvelle création de la cliente. J'ai eu la possibilitée de mettre en place un formulaire de demande et de pouvoir récupérer les données utilisateurs.",
+        "tags": ["Modal", "Événement","API", "Javascript"]
+      },
+      {
+        "id": 5,
+        "name": "Mon-Vieux-Grimoire",
+        "img": ["/assets/mvg1.png","/assets/mvg2.png","/assets/mvg3.png","/assets/mvg4.png","/assets/mvg5.png"],
+        "altText": "image du projet MVG",
+        "descriptionProjet": "Mon Vieux Grimoire, un site de notation de livres au nom de sa chaîne de librairies “Le Vieux Grimoire” à Lille. Ce site m'a donné la possibilitée de mettre en place l'environnement BackEnd du site. J'ai eu la possibilitée de creer un serveur, de mettre en place une base de données avec Mongo DB Atlas afin de stocker les informations.J'ai pu mettre en place un système d'authentification sécurisé. De créer les appels pour les ajouts ainsi que les suppressions et les notations des livres.",
+        "tags": ["Node.js", "Mongo D.B","Green Code", "API"]
+      },
+      {
+        "id": 6,
+        "name": "Photographe-Nina-Carducci",
+        "img": ["/assets/nina1.png","/assets/nina2.png","/assets/nina3.png","/assets/nina4.png","/assets/nina5.png"],
+        "altText": "image du projet Carducci",
+        "descriptionProjet": "Le site de la photographe Nina Carducci. Se projet ma permis d'apprendre l'utilisation des outils de débbugage ainsi que d'optimiser le site. Grâce à se projet, j'ai pu faire l'usage de lighthouse, qui m'a permit de me guider sur le référencement du site ( SEO / Bonne Pratique / Performance et l'Accessibilité ) au format Desktop et Mobile. Un projet riche d'enseignement !  ",
+        "tags": ["Lightouse", "SEO", "Débug", "Optimisation"]
+      }
+
+  ]
+  
