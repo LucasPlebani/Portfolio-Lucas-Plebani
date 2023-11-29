@@ -37,7 +37,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "Passionné par la création web, je marie l'esthétique au fonctionnel pour donner vie à des expériences uniques et intuitives. Mon objectif : transformer des idées en lignes de code pour construire un web innovant et engageant.";
+  "Actuellement en formation de développeur Web (RNCP 5) au sein de l'école OpenClassrooms. J'ai la possibilitée d'apprendre un métier en pleine évolution !    Passionné par la création web, je marie l'esthétique au fonctionnel pour donner vie à des expériences uniques et intuitives. Mon objectif : transformer des idées en lignes de code pour construire un web innovant et engageant.";
 
 /* Skills
  ************************************************************** 
