@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slideshow from '../components/carousel'; // Supposons que Slideshow se trouve dans ce chemin
+import SBFrame from '../images/FrameSB.png'
 import jsonData from '../projet.json'; // Importez votre fichier JSON
 import { Title } from "../components/globalStyledComponents";
 import Footer from '../components/Footer';
@@ -20,20 +20,16 @@ function ArchitectePage() {
       <div>
               <Container className="text-center">
      <Title> 
-          <h2>Menu Maker By Qwenta </h2>
+          <h2>Architect Sophie Bluel </h2>
           <div className="underline"></div>
         </Title>
         </Container>
-  
+        <img className='imgProject' src={SBFrame} alt=" projet Sophie Bluel" />
+
      
         {projectDataId4.map((project) => (
         <div key={project.id}>
-          {/* Affichez les détails du projet associés à l'ID 3 */}
-          {Array.isArray(project.img) ? (
-            <Slideshow pictures={project.img.map(img => `${process.env.PUBLIC_URL}${img}`)} />
-          ) : (
-            <img src={`${process.env.PUBLIC_URL}${project.img}`} alt={project.altText} />
-          )}
+         
            <Tags tags={project.tags}/>
           <p className='descriptionProj'>{project.descriptionProjet} </p>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slideshow from '../components/carousel'; // Supposons que Slideshow se trouve dans ce chemin
+import ninaFrame from '../images/FrameNina.png'
 import jsonData from '../projet.json'; // Importez votre fichier JSON
 import { Title } from "../components/globalStyledComponents";
 import Footer from '../components/Footer';
@@ -25,15 +25,12 @@ function NinaPage() {
         </Title>
         </Container>
   
-     
+        <img className='imgProject' src={ninaFrame} alt=" projet nina carducci" />
+
         {projectDataId6.map((project) => (
         <div key={project.id}>
        
-          {Array.isArray(project.img) ? (
-            <Slideshow pictures={project.img.map(img => `${process.env.PUBLIC_URL}${img}`)} />
-          ) : (
-            <img src={`${process.env.PUBLIC_URL}${project.img}`} alt={project.altText} />
-          )}
+        
            <Tags tags={project.tags}/>
           <p className='descriptionProj'>{project.descriptionProjet} </p>
         </div>

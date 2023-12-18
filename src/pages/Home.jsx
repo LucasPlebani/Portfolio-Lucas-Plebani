@@ -10,7 +10,6 @@ import Contact from "../components/Contact";
 import { BackToTop } from "../components/globalStyledComponents";
 import Footer from "../components/Footer";
 import CardProjectPdf from "../components/CardP4";
-import StyledCard from "../components/formation";
 export default function Home() {
   const { name } = useSelector(selectData);
 
@@ -29,7 +28,6 @@ export default function Home() {
         <Skills />
         <CardProjectPdf />
         <Projects />
-        <StyledCard />
         <Contact />
       </main>
       <BackToTop home={"Home"} />

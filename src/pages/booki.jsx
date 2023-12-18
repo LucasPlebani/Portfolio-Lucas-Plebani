@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slideshow from '../components/carousel'; // Supposons que Slideshow se trouve dans ce chemin
+import bookiFrame from "../images/frameBooki.png"
 import jsonData from '../projet.json'; // Importez votre fichier JSON
 import { Title } from "../components/globalStyledComponents";
 import Footer from '../components/Footer';
@@ -12,8 +12,8 @@ function BookiPage() {
     const projectDataId1 = projectData.filter((project) => project.id === 1);
   
     useEffect(() => {
-      // Vous pouvez traiter les données ici si besoin
-      setProjectData(jsonData); // Stockez les données du JSON dans l'état
+  
+      setProjectData(jsonData);
     }, []);
   
     return (
@@ -29,11 +29,8 @@ function BookiPage() {
         {projectDataId1.map((project) => (
         <div key={project.id}>
        
-          {Array.isArray(project.img) ? (
-            <Slideshow pictures={project.img.map(img => `${process.env.PUBLIC_URL}${img}`)} />
-          ) : (
-            <img src={`${process.env.PUBLIC_URL}${project.img}`} alt={project.altText} />
-          )}
+       <img className='imgProject' src={bookiFrame} alt=" projet Booki" />
+
            <Tags tags={project.tags}/>
           <p className='descriptionProj'>{project.descriptionProjet} </p>
         </div>

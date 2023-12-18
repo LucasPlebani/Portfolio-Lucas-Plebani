@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slideshow from '../components/carousel'; // Supposons que Slideshow se trouve dans ce chemin
+import qwentaFrame from '../images/frameQwenta.png'
 import jsonData from '../projet.json'; // Importez votre fichier JSON
 import { Title } from "../components/globalStyledComponents";
 import Footer from '../components/Footer';
@@ -29,11 +29,8 @@ function QwentaPage() {
       {projectDataId3.map((project) => (
       <div key={project.id}>
       
-        {Array.isArray(project.img) ? (
-          <Slideshow pictures={project.img.map(img => `${process.env.PUBLIC_URL}${img}`)} />
-        ) : (
-          <img src={`${process.env.PUBLIC_URL}${project.img}`} alt={project.altText} />
-        )}
+      <img className='imgProject' src={qwentaFrame} alt=" projet qwenta" />
+
          <Tags tags={project.tags}/>
         <p className='descriptionProj'>{project.descriptionProjet} </p>
       </div>
