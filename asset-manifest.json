@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio-Lucas-Plebani/static/css/main.fa2252e2.css",
-    "main.js": "/Portfolio-Lucas-Plebani/static/js/main.95b6ab72.js",
+    "main.css": "/Portfolio-Lucas-Plebani/static/css/main.cea0f9a8.css",
+    "main.js": "/Portfolio-Lucas-Plebani/static/js/main.cd9fc262.js",
     "static/media/P_portfolio.png": "/Portfolio-Lucas-Plebani/static/media/P_portfolio.b62f0cd6ea14ee368c05.png",
+    "static/media/FrameNina.png": "/Portfolio-Lucas-Plebani/static/media/FrameNina.a39651ff6b48a12754f8.png",
+    "static/media/frameKasa.png": "/Portfolio-Lucas-Plebani/static/media/frameKasa.335646b58bc3000a889f.png",
+    "static/media/FrameSB.png": "/Portfolio-Lucas-Plebani/static/media/FrameSB.370a91f18807bfc62e0d.png",
+    "static/media/frame3mvg.png": "/Portfolio-Lucas-Plebani/static/media/frame3mvg.edb824a4146784238575.png",
+    "static/media/frameBooki.png": "/Portfolio-Lucas-Plebani/static/media/frameBooki.d7a867022ea5467e83b4.png",
     "static/media/P5_image.png": "/Portfolio-Lucas-Plebani/static/media/P5_image.ff2610107dc98514a607.png",
+    "static/media/frameQwenta.png": "/Portfolio-Lucas-Plebani/static/media/frameQwenta.31e8965c772b7a7e3c59.png",
     "static/media/P_SB.png": "/Portfolio-Lucas-Plebani/static/media/P_SB.58e1593a53f048ea6d2f.png",
     "static/media/P_kasa.png": "/Portfolio-Lucas-Plebani/static/media/P_kasa.4114aaad6202a868c526.png",
     "static/media/P_booki.png": "/Portfolio-Lucas-Plebani/static/media/P_booki.fe29e20d909a653fd535.png",
     "static/media/P_mvg.png": "/Portfolio-Lucas-Plebani/static/media/P_mvg.ac27738d5ad8c07de13a.png",
     "static/media/hero-dark.jpg": "/Portfolio-Lucas-Plebani/static/media/hero-dark.37f2556d620821979e99.jpg",
     "static/media/hero-light.jpg": "/Portfolio-Lucas-Plebani/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
-    "static/media/opclogo.png": "/Portfolio-Lucas-Plebani/static/media/opclogo.7378446e73f903cc01ed.png",
     "static/media/qwenta.png": "/Portfolio-Lucas-Plebani/static/media/qwenta.0a920e2e4e3b0b1d778d.png",
     "static/media/Logo-LP.png": "/Portfolio-Lucas-Plebani/static/media/Logo-LP.35d3d56bedf0267d8478.png",
     "service-worker.js": "/Portfolio-Lucas-Plebani/service-worker.js",
@@ -18,11 +23,11 @@
     "static/media/defaultNavLogo.svg": "/Portfolio-Lucas-Plebani/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.svg": "/Portfolio-Lucas-Plebani/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio-Lucas-Plebani/index.html",
-    "main.fa2252e2.css.map": "/Portfolio-Lucas-Plebani/static/css/main.fa2252e2.css.map",
-    "main.95b6ab72.js.map": "/Portfolio-Lucas-Plebani/static/js/main.95b6ab72.js.map"
+    "main.cea0f9a8.css.map": "/Portfolio-Lucas-Plebani/static/css/main.cea0f9a8.css.map",
+    "main.cd9fc262.js.map": "/Portfolio-Lucas-Plebani/static/js/main.cd9fc262.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa2252e2.css",
-    "static/js/main.95b6ab72.js"
+    "static/css/main.cea0f9a8.css",
+    "static/js/main.cd9fc262.js"
   ]
 }
